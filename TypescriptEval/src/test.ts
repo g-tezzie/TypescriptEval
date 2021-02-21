@@ -17,7 +17,7 @@ async function main() {
   await Promise.all(
     [
       (async () => console.log(await hoge("await 付きで呼び出しA1")))(),
-      (async () => console.log(await hoge("await 付きで呼び出しA2")))()
+      (async () => console.log(/*Math.abs*/(await hoge("await 付きで呼び出しA2"))))()
     ]
   )
   hoge("await なしで呼び出し2")
